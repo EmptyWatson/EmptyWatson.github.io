@@ -1,0 +1,151 @@
+/* PC端专用样式 */
+.pc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pc-content {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 40px);
+}
+
+.pc-header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.pc-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.pc-footer {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ebeef5;
+  color: #909399;
+}
+
+/* 响应式表格 */
+.pc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0;
+}
+
+.pc-table th,
+.pc-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ebeef5;
+}
+
+.pc-table th {
+  background-color: #f5f7fa;
+  font-weight: bold;
+}
+
+/* 按钮样式优化 */
+.pc-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.pc-button:hover {
+  opacity: 0.8;
+}
+
+.pc-button-primary {
+  background-color: #409eff;
+  color: white;
+}
+
+.pc-button-success {
+  background-color: #67c23a;
+  color: white;
+}
+
+.pc-button-info {
+  background-color: #909399;
+  color: white;
+}
+
+/* 卡片样式 */
+.pc-card {
+  border: 1px solid #ebeef5;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.pc-card-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #303133;
+}
+
+/* 表单样式 */
+.pc-form-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.pc-form-label {
+  width: 100px;
+  text-align: right;
+  margin-right: 15px;
+  color: #606266;
+}
+
+.pc-form-content {
+  flex: 1;
+}
+
+/* 文本样式 */
+.pc-text-large {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.pc-text-medium {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pc-text-small {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* 响应式断点 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .pc-container {
+    padding: 15px;
+  }
+  
+  .pc-card {
+    padding: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .pc-container {
+    padding: 30px;
+  }
+  
+  .pc-card {
+    padding: 25px;
+  }
+}
